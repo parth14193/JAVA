@@ -17,17 +17,16 @@ import org.joda.time.format.DateTimeFormatter;
 public class dateformate {
    
     public static void main(String[] args) {
-        boolean valid = true;
+        boolean valid = false;
       try{
-          DateTimeFormatter formatter = DateTimeFormat.forPattern("dd-MMM-yy HH.ss.mm.SSSSSSSSS a");
+          DateTimeFormatter formatter = DateTimeFormat.forPattern("dd/MM/yyyyHH:mm:ss");
       
-        String datetime = "01-APR-17 12.13.07.079582000 AM";
+        String datetime = "03/08/2017 08:46:00";
         DateTime dob = formatter.parseDateTime(datetime);
             System.out.println(dob);
       }
       catch(Exception e){
-          valid = false;
+          System.out.println(e);
       }
-        System.out.println(valid);
     }
     }

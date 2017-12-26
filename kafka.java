@@ -31,7 +31,7 @@ public class kafka {
         Random rnd = new Random();
         for(long i=0;i< 100;i++)
         {
-            ProducerRecord<String,String> data = new ProducerRecord<String,String>("tenant1-Raw","key-" + i,"message-"+i);
+            ProducerRecord<String,String> data = new ProducerRecord<String,String>("tenant7-Raw","key-" + i,"message-"+i);
                        producer.send(data, callback);
 
             
