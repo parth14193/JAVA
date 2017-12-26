@@ -21,7 +21,7 @@ import org.apache.solr.common.SolrInputDocument;
  */
 public class importdatatosolr {
     public static void main(String[] args) throws SolrServerException, IOException {
-    SolrServer client = new HttpSolrServer("http://172.16.8.191:8983/solr/tenant8-ipmapping");
+    SolrServer client = new HttpSolrServer("http://IP:8983/solr/tenant8-ipmapping");
   //  ContentStreamUpdateRequest req = new ContentStreamUpdateRequest("/update/extract");
     File file = new File("C:\\Users\\parth\\Desktop\\sample1.xml");
          
